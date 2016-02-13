@@ -11,22 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
+
 ActiveRecord::Schema.define(version: 20160213181445) do
-=======
-ActiveRecord::Schema.define(version: 20160213210234) do
->>>>>>> 1ca04bd0e947cff791e983fd3e372758e8fc3916
 
   create_table "companies", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-<<<<<<< HEAD
-  end
-
-  create_table "designs", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-=======
     t.string   "name"
   end
 
@@ -34,7 +24,6 @@ ActiveRecord::Schema.define(version: 20160213210234) do
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.string   "product_name"
->>>>>>> 1ca04bd0e947cff791e983fd3e372758e8fc3916
   end
 
   create_table "reviews", force: :cascade do |t|
@@ -45,8 +34,6 @@ ActiveRecord::Schema.define(version: 20160213210234) do
   create_table "users", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-<<<<<<< HEAD
-=======
     t.string   "name"
     t.string   "email"
     t.integer  "age"
@@ -54,7 +41,6 @@ ActiveRecord::Schema.define(version: 20160213210234) do
     t.string   "gender"
     t.string   "username"
     t.string   "password"
->>>>>>> 1ca04bd0e947cff791e983fd3e372758e8fc3916
   end
 
 end
