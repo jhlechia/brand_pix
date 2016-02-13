@@ -1,14 +1,27 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns = "http://www.w3.org/1999/xhtml">
 <head>
+  <meta http-equiv = "Content-Type" content = "text/html; charset = iso-8859-1" />
+  <meta http-equiv = "Content-Language" content = "en-us" />
   <title>BrandPix</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
 </head>
-<body>
+<body id = "library">
+      <div id = "container">
 
-<%= yield %>
+         <div id = "header">
+            <h1>Library Info System</h1>
+            <h3>Library powered by Ruby on Rails</h3>
+         </div>
 
-</body>
+         <div id = "content">
+            <%= yield -%>
+         </div>
+
+         <div id = "sidebar"></div>
+
+      </div>
+   </body>
+
 </html>
