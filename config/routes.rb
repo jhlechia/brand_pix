@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   resources :users
-  resources :companies
+
+  resources :companies do
+    resource :designs
+  end
+  
   resources :designs
   resources :reviews
   resources :reviews
@@ -12,6 +16,7 @@ Rails.application.routes.draw do
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
+  get 'companies/:id' =>'companies#show'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
