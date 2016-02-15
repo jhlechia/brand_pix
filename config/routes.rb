@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   get 'users/new' => 'users#create'
   get '/users/:id/edit' => 'users#edit'
   get 'users' => 'users#index'
+  delete 'users/:id' => 'users#destroy'
 
   get 'companies/:id' => 'companies#show'
   get 'companies/new' => 'companies#create'
@@ -30,7 +31,9 @@ Rails.application.routes.draw do
 
 
   get 'designs/:id' => 'designs#show'
-  post 'designs/new' => 'designs#create'
+  get 'designs/new' => 'designs#create'
+  get 'designs' => 'designs#index'
+
 
 
 
