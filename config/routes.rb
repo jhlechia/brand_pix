@@ -18,11 +18,15 @@ Rails.application.routes.draw do
   #   get 'products/:id' => 'catalog#view'
   # post 'users/new' => 'users#create'
   get 'users/:id' => 'users#show'
-  post 'users/new' => 'users#create'
-  
+  get 'users/new' => 'users#create'
+  get '/users/:id/edit' => 'users#edit'
+  get 'users' => 'users#index'
 
   get 'companies/:id' => 'companies#show'
   get 'companies/new' => 'companies#create'
+  get 'companies/:id/edit' => 'companies#edit'
+  get 'companies' => 'companies#index'
+
 
 
   get 'designs/:id' => 'designs#show'
