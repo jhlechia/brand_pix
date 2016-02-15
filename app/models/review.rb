@@ -1,3 +1,3 @@
 class Review < ActiveRecord::Base
-  belongs_to :user, :design 
+  belongs_to :user, :design
 end
