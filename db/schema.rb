@@ -13,7 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20160215020030) do
 
-
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -35,12 +34,10 @@ ActiveRecord::Schema.define(version: 20160215020030) do
   create_table "reviews", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer  "user_id"
-    t.integer  "design_id"
     t.string   "comment"
     t.string   "title"
     t.string   "rating"
-
+    t.integer  "design_id"
   end
 
   create_table "users", force: :cascade do |t|
