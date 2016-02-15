@@ -11,6 +11,44 @@
     </div>
   <% end %>
 
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :comment %><br>
+    <%= f.text_field :comment %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rating %><br>
+    <%= f.radio_button(:rating, "Like") %>
+    <%= label_tag(:rating, "Like") %>
+    <%= f.radio_button(:rating, "Indifferent") %>
+    <%= label_tag(:rating, "Indifferent") %>
+    <%= f.radio_button(:rating, "Dislike") %>
+    <%= label_tag(:rating, "Dislike") %>
+  </div>
+
+    <!-- <form>
+    <input type="radio" name="rating" value="love" checked> Love<br>
+    <input type="radio" name="rating" value="like" checked> Like<br>
+    <input type="radio" name="rating" value="indifferent"> Indifferent<br>
+    <input type="radio" name="rating" value="like" checked> Dislike<br>
+    <input type="radio" name="rating" value="dislike"> Strongly Dislike
+  </form>
+  </div> -->
+
+  <!-- <div class='field'>
+  <%= radio_button_tag(:age, "child") %>
+  <%= label_tag(:age_child, "I am younger than 21") %>
+  <%= radio_button_tag(:age, "adult") %>
+  <%= label_tag(:age_adult, "I'm over 21") %>v
+</div> -->
+
+
+
   <div class="actions">
     <%= f.submit %>
   </div>

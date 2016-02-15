@@ -10,6 +10,7 @@ class DesignsController < ApplicationController
   # GET /designs/1
   # GET /designs/1.json
   def show
+    @design = Design.find(params[:id])
   end
 
   # GET /designs/new
@@ -69,6 +70,6 @@ class DesignsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def design_params
-      params.fetch(:design, {})
+      params.require(:design).permit(:company_id, :product_name, :description)
     end
 end
