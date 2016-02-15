@@ -12,7 +12,7 @@ class CompaniesController < ApplicationController
   def show
     @company=Company.find(params[:id])
   end
-
+  #
   # GET /companies/new
   # def new
   #   @company = Company.new
@@ -21,11 +21,11 @@ class CompaniesController < ApplicationController
   # GET /companies/1/edit
   # def edit
   # end
-
+  #
   # POST /companies
   # POST /companies.json
   # def create
-  #   @company = Company.new(company_params)
+  #   @company = Company.new(:name)
   #
   #   respond_to do |format|
   #     if @company.save
@@ -70,6 +70,6 @@ class CompaniesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def company_params
-      params.fetch(:company, {})
+      params.fetch(:company, :username)
     end
 end
