@@ -1,4 +1,10 @@
 <p id="notice"><%= notice %></p>
 
+
+<ul>
+  <li> <%=@design.product_name%> </li>
+  <li> <%=@design.description%> </li>
+  <li> <%=@design%>.company_id </li>
+</ul>
 <%= link_to 'Edit', edit_design_path(@design) %> |
 <%= link_to 'Back', designs_path %>

@@ -35,8 +35,10 @@ ActiveRecord::Schema.define(version: 20160215020030) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string   "comment"
+    t.string   "user_id"
     t.string   "title"
     t.string   "rating"
+    t.integer  "design_id"
   end
 
   create_table "users", force: :cascade do |t|
