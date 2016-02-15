@@ -23,11 +23,11 @@ Rails.application.routes.draw do
   get 'users' => 'users#index'
   delete 'users/:id' => 'users#destroy'
 
+
   get 'companies/:id' => 'companies#show'
   get 'companies/new' => 'companies#create'
   get 'companies/:id/edit' => 'companies#edit'
   get 'companies' => 'companies#index'
-
 
 
   get 'designs/:id' => 'designs#show'
@@ -35,7 +35,9 @@ Rails.application.routes.draw do
   get 'designs' => 'designs#index'
 
 
-
+  get 'reviews' => 'reviews#index'
+  get 'reviews/new' => 'reviews#create'
+  get 'reviews/:id' => 'reviews#show'
 
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
